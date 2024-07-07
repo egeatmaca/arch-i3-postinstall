@@ -13,7 +13,7 @@ Profile: Desktop>i3-wm <br>
 Additional Packages: git
 2. Internet connection
 
-## Run Postinstallation Script
+## Run Post-installation Script
 1. Open a terminal (Alt+Return by default, Win+Return is also common)
 2. <code> git clone https://github.com/egeatmaca/arch-i3-postinstall.git </code><br>
 3. <code> /bin/bash arch-i3-postinstall/postinstall.sh </code>
