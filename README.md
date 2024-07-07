@@ -3,7 +3,8 @@ Arch-I3-Postinstall setups
 - a super lightweight system (< 500 MB memory usage)
 - with a user-friendly tiling window manager,
 - additional system software (bluetooth, nightlight, firewall etc.),
-- and software development packages
+- software development packages,
+- and yay for installing from arch user repositories
 
 ## Requirements
 1. Arch Linux installed using [archinstall](https://wiki.archlinux.org/title/archinstall) script. Select the following parameters during installation.<br>
