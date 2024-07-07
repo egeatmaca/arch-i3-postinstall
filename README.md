@@ -1,5 +1,5 @@
-# User-friendly Arch I3-WM for Software Development
-## User-friendly Dev Env Setup for Arch with I3-WM 
+# Arch-I3-Postinstall
+## User-Friendly Arch I3-WM for Software Development
 Arch-I3-Postinstall setups 
 - a super lightweight system (< 500 MB memory usage)
 - with a user-friendly tiling window manager,
@@ -13,7 +13,7 @@ Profile: Desktop>i3-wm <br>
 Additional Packages: git
 2. Internet connection
 
-## Run Post-installation Script
+## Run Post-Installation Script
 1. Open a terminal (Alt+Return by default, Win+Return is also common)
 2. <code> git clone https://github.com/egeatmaca/arch-i3-postinstall.git </code><br>
 3. <code> /bin/bash arch-i3-postinstall/postinstall.sh </code>
