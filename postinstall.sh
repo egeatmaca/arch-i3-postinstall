@@ -18,6 +18,7 @@ yay
 sudo systemctl enable --now bluetooth
 sudo ufw enable
 
-# Copy config files
+# Copy dotfiles
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-cp -a $SCRIPT_DIR/config/. ~/.config
+cp -a $SCRIPT_DIR/dotfiles/root/. /
+cp -a $SCRIPT_DIR/dotfiles/user/. ~
