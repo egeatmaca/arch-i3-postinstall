@@ -12,11 +12,12 @@ Profile: Desktop>i3-wm <br>
 Additional Packages: git
 2. Internet connection
 
-## Setup
-<code> git clone https://github.com/egeatmaca/arch-i3-postinstall.git </code><br>
-<code> /bin/bash arch-i3-postinstall/postinstall.sh </code>
+## Run Postinstallation Script
+1. Open a terminal (Alt+Return by default, Win+Return is also common)
+2. <code> git clone https://github.com/egeatmaca/arch-i3-postinstall.git </code><br>
+3. <code> /bin/bash arch-i3-postinstall/postinstall.sh </code>
 
-## Getting Started
+## Getting Started with Keyboard Shortcuts
 - Open terminal: Win+Return
 - Launch application: Win+A
 - Close focused window: Win+Q
