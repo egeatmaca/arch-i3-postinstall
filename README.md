@@ -12,7 +12,7 @@ Additional Packages: git
 2. Internet connection
 
 ## Setup
-<code> git clone https://github.com/egeatmaca/arch-i3-postinstall.git </code>
+<code> git clone https://github.com/egeatmaca/arch-i3-postinstall.git </code><br>
 <code> /bin/bash arch-i3-postinstall/postinstall.sh </code>
 
 ## Getting Started
