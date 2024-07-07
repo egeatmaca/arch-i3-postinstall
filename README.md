@@ -1,4 +1,4 @@
-# Arch-I3-Postinstall
+# User-friendly Arch I3-WM for Software Development
 ## User-friendly Dev Env Setup for Arch with I3-WM 
 Arch-I3-Postinstall setups 
 - a super lightweight system (< 500 MB memory usage)
