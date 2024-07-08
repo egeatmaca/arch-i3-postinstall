@@ -4,7 +4,7 @@
 sudo reflector --protocol https --verbose --latest 25 --sort rate --save /etc/pacman.d/mirrorlist
 
 # Update and install pacman packages
-sudo pacman -Syu --needed --noconfirm alacritty rofi htop neofetch bluez bluez-utils blueman redshift firefox code git python-pip
+sudo pacman -Syu --needed --noconfirm alacritty rofi htop neofetch bluez bluez-utils blueman redshift firefox code git python-pip docker docker-buildx docker-compose
 
 # Install and update yay
 git clone https://aur.archlinux.org/yay.git
