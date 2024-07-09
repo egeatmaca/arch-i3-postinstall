@@ -4,7 +4,7 @@
 sudo reflector --protocol https --verbose --latest 25 --sort rate --save /etc/pacman.d/mirrorlist
 
 # Update and install pacman packages
-sudo pacman -Syu --needed --noconfirm alacritty rofi htop neofetch bluez bluez-utils blueman redshift firefox code git python-pip docker docker-buildx docker-compose
+sudo pacman -Syu --needed --noconfirm alacritty rofi feh htop neofetch bluez bluez-utils blueman redshift firefox code git python-pip docker docker-buildx docker-compose
 
 # Install and update yay
 git clone https://aur.archlinux.org/yay.git
@@ -20,5 +20,5 @@ sudo ufw enable
 
 # Copy dotfiles
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-cp -a $SCRIPT_DIR/dotfiles/root/. /
+sudo cp -a $SCRIPT_DIR/dotfiles/root/. /
 cp -a $SCRIPT_DIR/dotfiles/user/. ~
