@@ -4,7 +4,7 @@ Arch-I3-Postinstall setups
 - a super lightweight system (< 500 MB memory usage)
 - with a user-friendly tiling window manager,
 - additional system software (bluetooth, nightlight, firewall etc.),
-- software development packages,
+- software development packages (esp. for python and docker), 
 - and yay for installing from arch user repositories
 
 ## Requirements
