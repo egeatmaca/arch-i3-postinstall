@@ -18,7 +18,7 @@ set $mod Mod4
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 # font pango:DejaVu Sans Mono 8
-font pango:Helvetica 8
+font pango:Helvetica 0
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -47,7 +47,7 @@ floating_modifier $mod
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
-tiling_drag modifier titlebar
+tiling_drag modifier titlebar 
 
 # start a terminal
 bindsym $mod+Return exec alacritty
@@ -178,10 +178,17 @@ bar {
         }
 }
 
-# hide_edge_borders None
-client.focused #4F6F52 #4F6F52 #efefef #222222 #222222
+# borders
+default_border pixel 3
+smart_borders on
+client.focused #4F6F52 #4F6F52 #efefef #4F6F52 #4F6F52 
+
+# gaps
+gaps inner 8
+gaps outer -3
 
 # Initial commands
 exec blueman-applet # Bluetooth applet on bar
 exec feh --bg-scale ~/.config/i3/background.jpg # Background
 exec redshift -O 5000 # Nightlight
+exec picom # Picom
