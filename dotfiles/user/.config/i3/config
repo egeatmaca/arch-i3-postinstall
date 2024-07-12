@@ -184,7 +184,7 @@ client.focused #4F6F52 #4F6F52 #efefef #4F6F52 #4F6F52
 
 # gaps
 gaps inner 8
-gaps outer -3
+# gaps outer 5
 
 # Initial commands
 exec blueman-applet # Bluetooth applet on bar
