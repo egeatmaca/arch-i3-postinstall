@@ -190,4 +190,4 @@ gaps inner 8
 exec blueman-applet # Bluetooth applet on bar
 exec feh --bg-scale ~/.config/i3/background.jpg # Background
 exec redshift -O 5000 # Nightlight
-# exec picom # Picom
+exec picom # Picom
