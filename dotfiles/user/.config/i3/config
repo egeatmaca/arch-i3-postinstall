@@ -180,7 +180,6 @@ bar {
 
 # borders
 default_border pixel 3
-smart_borders on
 client.focused #4F6F52 #4F6F52 #efefef #4F6F52 #4F6F52 
 
 # gaps
