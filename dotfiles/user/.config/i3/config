@@ -179,11 +179,9 @@ bar {
 }
 
 # borders
-default_border pixel 3
+default_border pixel 1
 client.focused #4F6F52 #4F6F52 #efefef #4F6F52 #4F6F52 
-
-# gaps
-gaps inner 5
+smart_borders on
 
 # Initial commands
 exec blueman-applet # Bluetooth applet on bar
