@@ -1,7 +1,8 @@
 ### Arch I3 Postinstall ###
 
-# Get script directory
+# Constants
 SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
+PACKAGE_LISTS=$SCRIPT_DIR/package-lists
 
 # Update mirrors
 sudo reflector --protocol https --verbose --latest 25 --sort rate --save /etc/pacman.d/mirrorlist
@@ -9,10 +10,10 @@ sudo reflector --protocol https --verbose --latest 25 --sort rate --save /etc/pa
 # Update packages
 sudo pacman -Syu
 
-# Install packages in packages.txt using pacman
+# Install pacman packages
 while read package; do
   sudo pacman -S "$package" --needed --noconfirm
-done <$SCRIPT_DIR/packages.txt
+done <$PACKAGE_LISTS/pacman.txt
 
 # Install and update yay
 git clone https://aur.archlinux.org/yay.git
@@ -21,6 +22,11 @@ makepkg -si
 cd ..
 sudo rm -r yay
 yay
+
+# Install AUR packages
+while read package; do
+  sudo yay "$package" --needed --noconfirm
+done <$PACKAGE_LISTS/aur.txt
 
 # Install LazyVim
 mv ~/.config/nvim{,.bak}
