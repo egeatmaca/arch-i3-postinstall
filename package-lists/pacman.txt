@@ -29,3 +29,4 @@ otf-geist-mono-nerd
 gthumb
 vlc
 scrot
+timeshift
