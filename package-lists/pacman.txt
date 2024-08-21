@@ -1,9 +1,11 @@
 i3-wm
-i3blocks
-i3lock
 i3status
+i3lock
+i3blocks
+suckless-tools
 alacritty
 rofi
+dunst
 thunar
 feh
 picom
@@ -26,4 +28,4 @@ xclip
 otf-geist-mono-nerd
 gthumb
 vlc
-
+scrot
