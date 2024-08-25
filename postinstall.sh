@@ -36,13 +36,13 @@ rm -rf ~/.config/nvim/.git
 sudo cp -a $SCRIPT_DIR/config/root/. /
 cp -a $SCRIPT_DIR/config/user/. ~
 
-# Update grub using the new config
-sudo grub-mkconfig -o /boot/grub/grub.cfg
-
 # Enable installed services
 sudo systemctl enable --now apparmor
 sudo systemctl enable --now bluetooth
 sudo ufw enable
+
+# Add apparmor to systemd boot config
+sudo /bin/bash -c "echo 'options apparmor=1 security=apparmor' >> /boot/loader/entries/$(ls /boot/loader/entries/ | grep linux.conf)"
 
 # Create user directories
 mkdir ~/Downloads ~/Documents ~/Pictures ~/Music ~/Git

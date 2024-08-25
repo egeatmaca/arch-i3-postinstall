@@ -30,6 +30,5 @@ gthumb
 vlc
 scrot
 timeshift
-tenacity
-grub
 apparmor
+tenacity
