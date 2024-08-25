@@ -19,6 +19,7 @@ firefox
 ufw
 neovim
 code
+jupyter-notebook
 git
 python-pip
 docker
@@ -31,4 +32,5 @@ vlc
 scrot
 timeshift
 apparmor
+libreoffice
 tenacity
