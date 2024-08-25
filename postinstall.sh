@@ -25,7 +25,7 @@ yay
 
 # Install AUR packages
 while read package; do
-  yay "$package" --needed --noconfirm
+  yay -S "$package" --needed --noconfirm
 done <$PACKAGE_LISTS/aur.txt
 
 # Install LazyVim
