@@ -38,8 +38,8 @@ sudo systemctl enable --now bluetooth
 sudo ufw enable
 
 # Copy dotfiles
-sudo cp -a $SCRIPT_DIR/dotfiles/root/. /
-cp -a $SCRIPT_DIR/dotfiles/user/. ~
+sudo cp -a $SCRIPT_DIR/config/root/. /
+cp -a $SCRIPT_DIR/config/user/. ~
 
 # Create user directories
 mkdir ~/Downloads ~/Documents ~/Pictures ~/Music ~/Git
