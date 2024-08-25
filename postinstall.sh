@@ -33,8 +33,8 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 
 # Copy dotfiles
-sudo cp -a $SCRIPT_DIR/dotfiles/root/. /
-cp -a $SCRIPT_DIR/dotfiles/user/. ~
+sudo cp -a $SCRIPT_DIR/config/root/. /
+cp -a $SCRIPT_DIR/config/user/. ~
 
 # Update grub using the new config
 sudo grub-mkconfig -o /boot/grub/grub.cfg
