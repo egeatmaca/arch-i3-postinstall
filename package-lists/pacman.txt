@@ -32,5 +32,8 @@ vlc
 scrot
 timeshift
 apparmor
+brightnessctl
 libreoffice
+slack-desktop
+discord
 tenacity
