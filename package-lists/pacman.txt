@@ -25,6 +25,7 @@ python-pip
 docker
 docker-buildx
 docker-compose
+dbeaver
 xclip
 otf-geist-mono-nerd
 gthumb
@@ -34,6 +35,7 @@ timeshift
 apparmor
 brightnessctl
 libreoffice
+tmux
 slack-desktop
 discord
 tenacity
