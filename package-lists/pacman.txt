@@ -38,3 +38,7 @@ tmux
 slack-desktop
 discord
 tenacity
+gcc
+make
+debugedit
+fakeroot
