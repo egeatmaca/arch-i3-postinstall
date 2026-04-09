@@ -137,15 +137,20 @@ widget_defaults = dict(
 extension_defaults = widget_defaults.copy()
 
 wallpaper = os.path.expanduser("~/.config/qtile/wallpaper.jpg")
-colors = { 'red': '#bf616a', 'green': '#4f6f52', 'white': '#efefef'}
+colors = {"black": "#222222",
+          "white": "#efefef",
+          "red": "#bf616a", 
+          "green": '#4f6f52'}
 screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.CurrentLayout(),
-                widget.GroupBox(),
-                widget.Prompt(),
-                widget.WindowName(),
+                # widget.CurrentLayout(),
+                widget.GroupBox(background=colors['green'], 
+                                active=colors['white'],
+                                inactive=colors['black']),
+                # widget.Prompt(),
+                widget.WindowName(foreground=colors['white']),
                 widget.Chord(
                     chords_colors={
                         "launch": ("#ff0000", "#ffffff"),
@@ -154,8 +159,7 @@ screens = [
                 ),
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
-                widget.Systray(),
-                # widget.Bluetooth(background='#004400'),
+                widget.Systray(background=colors['red']),
                 widget.Redshift(temperature=5000, 
                                 background=colors['red'], 
                                 padding=7),
@@ -190,7 +194,7 @@ screens = [
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
-        background="#222222",
+        background=colors['black'],
         wallpaper=wallpaper,
         wallpaper_mode="fill",
         # You can uncomment this variable if you see that on X11 floating resize/moving is laggy
