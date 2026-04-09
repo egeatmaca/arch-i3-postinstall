@@ -10,7 +10,7 @@ Arch-I3-Postinstall setups
 ## Requirements
 1. Arch Linux installed using [archinstall](https://wiki.archlinux.org/title/archinstall) script. Select the following parameters during installation.<br>
 Boot Loader: Systemd Boot <br>
-Profile: Desktop>i3-wm <br>
+Profile: Desktop>i3-wm / qtile <br>
 Additional Packages: git
 2. Internet connection
 
