@@ -44,5 +44,8 @@ sudo /bin/bash -c "echo 'options apparmor=1 security=apparmor' >> /boot/loader/e
 sudo cp -a $SCRIPT_DIR/config/root/. /
 cp -a $SCRIPT_DIR/config/user/. ~
 
+# Make Qtile autostart.sh executable
+chmod +x ~/.config/qtile/autostart.sh
+
 # Create user directories
 mkdir ~/Downloads ~/Documents ~/Pictures ~/Music ~/Git
