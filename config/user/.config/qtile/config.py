@@ -130,14 +130,14 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="sans",
+    font="sans bold",
     fontsize=12,
     padding=3,
 )
 extension_defaults = widget_defaults.copy()
 
-logo = os.path.join(os.path.dirname(libqtile.resources.__file__), "logo.png")
 wallpaper = os.path.expanduser("~/.config/qtile/wallpaper.jpg")
+colors = { 'red': '#bf616a', 'green': '#4f6f52', 'white': '#efefef'}
 screens = [
     Screen(
         top=bar.Bar(
@@ -156,25 +156,41 @@ screens = [
                 # widget.StatusNotifier(),
                 widget.Systray(),
                 # widget.Bluetooth(background='#004400'),
-                widget.TextBox("|", background='004400'),
-                widget.Redshift(temperature=5000, background='004400'),
-                widget.TextBox("|", background='004400'),
-                widget.CPU(background='#004400'),
-                widget.TextBox("|", background='004400'),
-                widget.Memory(background='#004400'),
-                widget.TextBox("|", background='004400'),
-                widget.Volume(background='#004400'), # TODO: fix dependencies
-                widget.TextBox("|", background='004400'),
-                widget.Battery(format="{char} {percent:2.0%} {hour:d}:{min:02d}", background='#004400'),
-                widget.TextBox("|", background='004400'),
-                widget.Clock(format="%Y-%m-%d %a %I:%M %p", background='#004400'),
+                widget.Redshift(temperature=5000, 
+                                background=colors['red'], 
+                                padding=7),
+                widget.CPU(format='CPU: {load_percent}%', 
+                           background=colors['green'], 
+                           foreground=colors['white']),
+                widget.TextBox("|", 
+                               background=colors['green'], 
+                               foreground=colors['white']),
+                widget.Memory(format='RAM: {MemPercent}%', 
+                              background=colors['green'], 
+                              foreground=colors['white']),
+                widget.TextBox("|", 
+                               background=colors['green'], 
+                               foreground=colors['white']),
+                widget.Volume(fmt="VOL: {}", 
+                              background=colors['green'], 
+                              foreground=colors['white']), # TODO: fix
+                widget.TextBox("|", background=colors['green'], foreground=colors['white']),
+                widget.Battery(format="BAT: {char} {percent:2.0%} {hour:d}:{min:02d}",
+                               background=colors['green'], 
+                               foreground=colors['white']),
+                widget.TextBox("|", 
+                               background=colors['green'], 
+                               foreground=colors['white']),
+                widget.Clock(format="%Y-%m-%d %a %I:%M %p", 
+                             background=colors['green'], 
+                             foreground=colors['white']),
                 # widget.QuickExit(),
             ],
             24,
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
-        background="#000000",
+        background="#222222",
         wallpaper=wallpaper,
         wallpaper_mode="fill",
         # You can uncomment this variable if you see that on X11 floating resize/moving is laggy
