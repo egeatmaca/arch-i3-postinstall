@@ -1,4 +1,4 @@
-# Arch-I3-Postinstall
+# Arch-Postinstall
 ## Minimal User-Friendly Arch with Qtile & I3-WM
 Arch-I3-Postinstall setups 
 - a super lightweight system (< 500 MB memory usage)
